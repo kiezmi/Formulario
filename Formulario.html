@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <title>HTML5 y CSS Formulario de contacto</title> <link href="StyleSheet.css" rel="stylesheet" />
+	</head>
+<body>
+<form class="contact_form" action="#" id="contact_form" runat="server"> 
+<div>
+ <ul> 
+	<li>
+  		<h2>Cuestionario</h2>
+ 			 <span class="required_notification">* Datos requeridos</span>
+   </li>
+   <li> 
+   		<label for="name">Nombre:</label> 
+   		<input type="text" placeholder="John Doe" required /> 
+    </li>
+
+ </li>
+   <li> 
+   		<label for="apellido">Apellidos:</label> 
+   		<input type="text" placeholder="Mc Donals" required /> 
+    </li>
+    <li> 
+    	<label for="email">Email:</label>
+   		<input type="email" name="email" placeholder="info@developerji.com" required /> 
+    	 <span class="form_hint">
+    	 Formato correcto: "name@something.com"
+    	 </span>
+      </li>
+
+      <li> 
+   		<label for="poblacion">Poblacion:</label> 
+   		<input type="text" placeholder="Comunidad Valenciana" required /> 
+    </li>
+
+    <li> 
+   		<label for="name">Provincia:</label> 
+   		<input type="text" placeholder="Valencia" required /> 
+    </li>
+
+    <li> 
+   		<label for="edad">Edad:</label> 
+   		   <br />
+   		   <br />
+		<form>
+ 		 <input class="input2" type="radio" name="gender" value="0-20" checked> 0-20<br />
+ 		 <input class="input2" type="radio" name="gender" value="20-40"> 20-40<br />
+ 		 <input class="input2" type="radio" name="gender" value="40-60"> 40-60<br />
+  		<input class="input2" type="radio" name="gender" value="60-100"> 60-100<br />
+		</form>
+	</li>
+
+      <li> 
+      <label for="conocer">¿Como nos conociste?</label> 
+      <br />
+      <br />
+     
+      <input class="input2" type="checkbox" name="1" value="primer_checkbox"> 
+      <label class="label3" for="cbox1">A traves de un amigo</label>
+      <input class="input2" type="checkbox" name="2" value="segundo_checkbox"> 
+      <label class="label3" for="cbox2">A traves de un buscador</label>
+      <input class="input2" type="checkbox" name="3" value="tercero_checkbox"> 
+      <label class="label3" for="cbox3">Navegando por la red</label>
+      <input class="input2" type="checkbox" name="4" value="cuarto_checkbox"> 
+      <label class="label3" for="cbox4">Otros</label><br />
+      <br />
+      </li>
+
+    	<li> 
+     
+          	<label class="label2" for="message">Opinion sobre nuestra web:</label>
+     	<br />
+     	<br />
+        <textarea name="message" cols="40" rows="6" required placeholder="Escriba aqui su opinion..."></textarea>
+       
+     </li>
+
+ <li> 
+     	<label class="label2" for="message">Tiene alguna sugerencia:</label>
+     	<br />
+     	<br />
+        <textarea name="message" cols="40" rows="6" required placeholder="Escriba aqui sus sugerencias..."></textarea>
+     </li>
+		<li> 
+   		<label  class="label2" for="navegar">¿Cuanto navegas por internet?</label>  
+   		<br />
+     	<br />
+     	 <select name="navegar" size="1">  
+         <option value="2">2 horas o menos</option>
+         <option value="4">4 horas o menos</option>  
+         <option value="6">6 horas o menos</option>  
+     	 </select>  
+   		 </li>
+
+    <li>
+    	<button class="submit" type="submit">Enviar mensaje</button>
+    </li> 
+  </ul>
+</div>
+         </form>
+</body>
+</html>
